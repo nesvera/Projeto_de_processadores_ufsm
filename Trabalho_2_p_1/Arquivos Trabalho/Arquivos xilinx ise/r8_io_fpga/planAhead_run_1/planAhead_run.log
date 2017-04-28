@@ -1,0 +1,83 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_io_fpga/pa.fromNcd.tcl}
+# create_project -name r8_io_fpga -dir "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_io_fpga/planAhead_run_1" -part xc6slx16csg324-3
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_io_fpga/R8_uC.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_io_fpga} }
+# set_property target_constrs_file "constraints.ucf" [current_fileset -constrset]
+Adding file 'C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_io_fpga/constraints.ucf' to fileset 'constrs_1'
+# add_files [list {constraints.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-3
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design R8_uC.ngc ...
+WARNING:NetListWriters:298 - No output is written to R8_uC.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   PROCESSOR/Madd_GND_14_o_GND_14_o_add_64_OUT_Madd_lut<15 : 0> on block R8_uC
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   PROCESSOR/Madd_GND_14_o_GND_14_o_add_51_OUT_lut<15 : 0> on block R8_uC is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file R8_uC.edif ...
+ngc2edif: Total memory usage is 58316 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/r8_io_fpga.data/cache/R8_uC_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/r8_io_fpga.data/cache/R8_uC_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'R8_uC' is not ideal for floorplanning, since the cellview 'R8_uC' defined in file 'R8_uC.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_io_fpga/constraints.ucf]
+Finished Parsing UCF File [C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_io_fpga/constraints.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (OBUFT, IBUF): 16 instances
+
+Phase 0 | Netlist Checksum: e0ba4eb5
+link_design: Time (s): elapsed = 00:00:40 . Memory (MB): peak = 461.086 ; gain = 85.953
+# read_xdl -file "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_io_fpga/R8_uC.ncd"
+Release 14.7 - xdl P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '6slx16.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "R8_uC" is an NCD, version 3.2, device xc6slx16, package csg324, speed -3
+Successfully converted design 'C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\r8_io_fpga\R8_uC.ncd' to 'C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\r8_io_fpga\R8_uC.xdl'.
+INFO: [Designutils 20-669] Parsing Placement File : C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_io_fpga/R8_uC.ncd
+INFO: [Designutils 20-658] Finished Parsing Placement File : C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_io_fpga/R8_uC.ncd
+INFO: [Designutils 20-671] Placed 2008 instances
+read_xdl: Time (s): elapsed = 00:00:14 . Memory (MB): peak = 471.262 ; gain = 7.379
+# if {[catch {read_twx -name results_1 -file "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_io_fpga/R8_uC.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_io_fpga/R8_uC.twx\": $eInfo"
+# }
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Apr 27 01:01:43 2017...
+INFO: [Common 17-83] Releasing license: PlanAhead

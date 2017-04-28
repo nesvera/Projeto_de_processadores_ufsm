@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Apr 27 18:47:20 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "rst" LOCATE = SITE "A8" LEVEL 1;
+COMP "port_io<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "port_io<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "port_io<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "port_io<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "port_io<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "port_io<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "port_io<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "port_io<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "port_io<8>" LOCATE = SITE "T10" LEVEL 1;
+COMP "port_io<9>" LOCATE = SITE "T9" LEVEL 1;
+COMP "port_io<10>" LOCATE = SITE "V9" LEVEL 1;
+COMP "port_io<11>" LOCATE = SITE "M8" LEVEL 1;
+COMP "port_io<12>" LOCATE = SITE "N8" LEVEL 1;
+COMP "port_io<13>" LOCATE = SITE "U8" LEVEL 1;
+COMP "port_io<14>" LOCATE = SITE "V8" LEVEL 1;
+COMP "port_io<15>" LOCATE = SITE "T5" LEVEL 1;
+SCHEMATIC END;
+

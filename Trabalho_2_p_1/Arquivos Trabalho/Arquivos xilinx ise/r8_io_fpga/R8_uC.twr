@@ -1,0 +1,102 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf
+constraints.ucf
+
+Design file:              R8_uC.ncd
+Physical constraint file: R8_uC.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+port_io<0>  |    3.981(R)|      SLOW  |   -2.244(R)|      FAST  |clk_div2          |   0.000|
+port_io<1>  |    4.041(R)|      SLOW  |   -2.286(R)|      FAST  |clk_div2          |   0.000|
+port_io<2>  |    4.076(R)|      SLOW  |   -2.307(R)|      FAST  |clk_div2          |   0.000|
+port_io<3>  |    3.945(R)|      SLOW  |   -2.196(R)|      FAST  |clk_div2          |   0.000|
+port_io<4>  |    4.346(R)|      SLOW  |   -2.465(R)|      FAST  |clk_div2          |   0.000|
+port_io<5>  |    4.128(R)|      SLOW  |   -2.344(R)|      FAST  |clk_div2          |   0.000|
+port_io<6>  |    4.014(R)|      SLOW  |   -2.245(R)|      FAST  |clk_div2          |   0.000|
+port_io<7>  |    4.069(R)|      SLOW  |   -2.322(R)|      FAST  |clk_div2          |   0.000|
+port_io<8>  |    3.372(R)|      SLOW  |   -1.908(R)|      FAST  |clk_div2          |   0.000|
+port_io<9>  |    3.194(R)|      SLOW  |   -1.676(R)|      FAST  |clk_div2          |   0.000|
+port_io<10> |    3.119(R)|      SLOW  |   -1.647(R)|      FAST  |clk_div2          |   0.000|
+port_io<11> |    3.877(R)|      SLOW  |   -2.281(R)|      FAST  |clk_div2          |   0.000|
+port_io<12> |    2.767(R)|      SLOW  |   -1.459(R)|      FAST  |clk_div2          |   0.000|
+port_io<13> |    3.001(R)|      SLOW  |   -1.604(R)|      FAST  |clk_div2          |   0.000|
+port_io<14> |    2.576(R)|      SLOW  |   -1.363(R)|      FAST  |clk_div2          |   0.000|
+port_io<15> |    3.129(R)|      SLOW  |   -1.732(R)|      FAST  |clk_div2          |   0.000|
+rst         |   14.890(R)|      SLOW  |   -1.597(R)|      FAST  |clk_div2          |   0.000|
+            |    9.455(F)|      SLOW  |   -3.707(F)|      FAST  |clk_div2          |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+port_io<0>  |         8.383(R)|      SLOW  |         4.077(R)|      FAST  |clk_div2          |   0.000|
+port_io<1>  |         7.548(R)|      SLOW  |         3.861(R)|      FAST  |clk_div2          |   0.000|
+port_io<2>  |         8.236(R)|      SLOW  |         3.902(R)|      FAST  |clk_div2          |   0.000|
+port_io<3>  |         7.994(R)|      SLOW  |         4.017(R)|      FAST  |clk_div2          |   0.000|
+port_io<4>  |         7.949(R)|      SLOW  |         4.011(R)|      FAST  |clk_div2          |   0.000|
+port_io<5>  |         7.663(R)|      SLOW  |         3.924(R)|      FAST  |clk_div2          |   0.000|
+port_io<6>  |         7.685(R)|      SLOW  |         4.121(R)|      FAST  |clk_div2          |   0.000|
+port_io<7>  |         7.743(R)|      SLOW  |         3.870(R)|      FAST  |clk_div2          |   0.000|
+port_io<8>  |         7.688(R)|      SLOW  |         3.788(R)|      FAST  |clk_div2          |   0.000|
+port_io<9>  |         7.431(R)|      SLOW  |         3.438(R)|      FAST  |clk_div2          |   0.000|
+port_io<10> |         7.236(R)|      SLOW  |         3.342(R)|      FAST  |clk_div2          |   0.000|
+port_io<11> |         7.945(R)|      SLOW  |         3.429(R)|      FAST  |clk_div2          |   0.000|
+port_io<12> |         7.989(R)|      SLOW  |         3.138(R)|      FAST  |clk_div2          |   0.000|
+port_io<13> |         7.869(R)|      SLOW  |         3.201(R)|      FAST  |clk_div2          |   0.000|
+port_io<14> |         7.607(R)|      SLOW  |         3.188(R)|      FAST  |clk_div2          |   0.000|
+port_io<15> |         8.392(R)|      SLOW  |         3.320(R)|      FAST  |clk_div2          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   13.999|    8.514|    9.012|         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu Apr 27 18:49:41 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 156 MB
+
+
+

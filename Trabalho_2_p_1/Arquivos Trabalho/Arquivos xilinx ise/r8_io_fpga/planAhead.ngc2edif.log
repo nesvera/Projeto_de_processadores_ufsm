@@ -1,0 +1,17 @@
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design R8_uC.ngc ...
+WARNING:NetListWriters:298 - No output is written to R8_uC.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   PROCESSOR/Madd_GND_14_o_GND_14_o_add_64_OUT_Madd_lut<15 : 0> on block R8_uC
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   PROCESSOR/Madd_GND_14_o_GND_14_o_add_51_OUT_lut<15 : 0> on block R8_uC is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file R8_uC.edif ...
+ngc2edif: Total memory usage is 58316 kilobytes
+

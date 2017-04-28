@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Apr 27 18:49:56 2017
+
+drc -z R8_uC.ncd R8_uC.pcf
+
+DRC detected 0 errors and 0 warnings.
