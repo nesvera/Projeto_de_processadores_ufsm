@@ -1,0 +1,589 @@
+<config>
+    <version>
+        2.0
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="0090f5e2b0d4082415594df59406aa00">bubble_cryptomessage_interrupt_wave.asdb</database>
+    </databases>
+    <signallists>
+        <signallist id="0">
+                AAAAJwAVwAV+AAAQ/xLXHA53JFskAV0FAwFdJFskwgEoIwEQowpgAOEFxi0BEQAA
+|
+        </signallist>
+    </signallists>
+    <propertybases>
+        <propertybase id="0">
+            <propclass name="radix">
+                <property first="74386" last="74386">
+                32
+                </property>
+                <property first="74404" last="74404">
+                32
+                </property>
+                <property first="74422" last="74422">
+                32
+                </property>
+                <property first="74440" last="74440">
+                32
+                </property>
+                <property first="74458" last="74458">
+                32
+                </property>
+                <property first="74476" last="74476">
+                32
+                </property>
+                <property first="74494" last="74494">
+                32
+                </property>
+                <property first="74512" last="74512">
+                32
+                </property>
+                <property first="74530" last="74530">
+                32
+                </property>
+                <property first="74548" last="74548">
+                32
+                </property>
+                <property first="74566" last="74566">
+                32
+                </property>
+                <property first="74584" last="74584">
+                32
+                </property>
+                <property first="74602" last="74602">
+                32
+                </property>
+                <property first="74620" last="74620">
+                32
+                </property>
+                <property first="74638" last="74638">
+                32
+                </property>
+                <property first="74656" last="74656">
+                32
+                </property>
+                <property first="74674" last="74674">
+                32
+                </property>
+                <property first="74692" last="74692">
+                32
+                </property>
+                <property first="74710" last="74710">
+                32
+                </property>
+                <property first="74728" last="74728">
+                32
+                </property>
+                <property first="74746" last="74746">
+                32
+                </property>
+                <property first="74764" last="74764">
+                32
+                </property>
+                <property first="74782" last="74782">
+                32
+                </property>
+                <property first="74800" last="74800">
+                32
+                </property>
+                <property first="74818" last="74818">
+                32
+                </property>
+                <property first="74836" last="74836">
+                32
+                </property>
+                <property first="74854" last="74854">
+                32
+                </property>
+                <property first="74872" last="74872">
+                32
+                </property>
+                <property first="74890" last="74890">
+                32
+                </property>
+                <property first="74908" last="74908">
+                32
+                </property>
+                <property first="74926" last="74926">
+                32
+                </property>
+                <property first="74944" last="74944">
+                32
+                </property>
+                <property first="74962" last="74962">
+                32
+                </property>
+                <property first="74980" last="74980">
+                32
+                </property>
+                <property first="74998" last="74998">
+                32
+                </property>
+                <property first="75016" last="75016">
+                32
+                </property>
+                <property first="75034" last="75034">
+                32
+                </property>
+                <property first="75052" last="75052">
+                32
+                </property>
+                <property first="75070" last="75070">
+                32
+                </property>
+                <property first="75088" last="75088">
+                32
+                </property>
+                <property first="75106" last="75106">
+                32
+                </property>
+                <property first="75124" last="75124">
+                32
+                </property>
+                <property first="75142" last="75142">
+                32
+                </property>
+                <property first="75160" last="75160">
+                32
+                </property>
+                <property first="75178" last="75178">
+                32
+                </property>
+                <property first="75196" last="75196">
+                32
+                </property>
+                <property first="75214" last="75214">
+                32
+                </property>
+                <property first="75232" last="75232">
+                32
+                </property>
+                <property first="75250" last="75250">
+                32
+                </property>
+                <property first="75268" last="75268">
+                32
+                </property>
+                <property first="75286" last="75286">
+                32
+                </property>
+                <property first="75304" last="75304">
+                32
+                </property>
+                <property first="75322" last="75322">
+                32
+                </property>
+                <property first="75340" last="75340">
+                32
+                </property>
+                <property first="75358" last="75358">
+                32
+                </property>
+                <property first="75376" last="75376">
+                32
+                </property>
+                <property first="75394" last="75394">
+                32
+                </property>
+                <property first="75412" last="75412">
+                32
+                </property>
+                <property first="75430" last="75430">
+                32
+                </property>
+                <property first="75448" last="75448">
+                32
+                </property>
+                <property first="75466" last="75466">
+                32
+                </property>
+                <property first="75484" last="75484">
+                32
+                </property>
+                <property first="75502" last="75502">
+                32
+                </property>
+                <property first="75520" last="75520">
+                32
+                </property>
+                <property first="75538" last="75538">
+                32
+                </property>
+                <property first="75556" last="75556">
+                32
+                </property>
+                <property first="75574" last="75574">
+                32
+                </property>
+                <property first="75592" last="75592">
+                32
+                </property>
+                <property first="75610" last="75610">
+                32
+                </property>
+                <property first="75628" last="75628">
+                32
+                </property>
+                <property first="75646" last="75646">
+                32
+                </property>
+                <property first="75664" last="75664">
+                32
+                </property>
+                <property first="75682" last="75682">
+                32
+                </property>
+                <property first="75700" last="75700">
+                32
+                </property>
+                <property first="75718" last="75718">
+                32
+                </property>
+                <property first="75736" last="75736">
+                32
+                </property>
+                <property first="75754" last="75754">
+                32
+                </property>
+                <property first="75772" last="75772">
+                32
+                </property>
+                <property first="75790" last="75790">
+                32
+                </property>
+                <property first="75808" last="75808">
+                32
+                </property>
+                <property first="75827" last="75827">
+                32
+                </property>
+                <property first="75845" last="75845">
+                32
+                </property>
+                <property first="75863" last="75863">
+                32
+                </property>
+                <property first="75881" last="75881">
+                32
+                </property>
+                <property first="75899" last="75899">
+                32
+                </property>
+                <property first="75917" last="75917">
+                32
+                </property>
+                <property first="75935" last="75935">
+                32
+                </property>
+                <property first="75953" last="75953">
+                32
+                </property>
+                <property first="75971" last="75971">
+                32
+                </property>
+                <property first="75989" last="75989">
+                32
+                </property>
+                <property first="76007" last="76007">
+                32
+                </property>
+                <property first="76025" last="76025">
+                32
+                </property>
+                <property first="76043" last="76043">
+                32
+                </property>
+                <property first="76061" last="76061">
+                32
+                </property>
+                <property first="76079" last="76079">
+                32
+                </property>
+                <property first="76097" last="76097">
+                32
+                </property>
+                <property first="76115" last="76115">
+                32
+                </property>
+                <property first="76133" last="76133">
+                32
+                </property>
+                <property first="76151" last="76151">
+                32
+                </property>
+                <property first="76169" last="76169">
+                32
+                </property>
+                <property first="76187" last="76187">
+                32
+                </property>
+                <property first="76205" last="76205">
+                32
+                </property>
+                <property first="76223" last="76223">
+                32
+                </property>
+                <property first="76241" last="76241">
+                32
+                </property>
+                <property first="76259" last="76259">
+                32
+                </property>
+                <property first="76277" last="76277">
+                32
+                </property>
+                <property first="76295" last="76295">
+                32
+                </property>
+                <property first="76313" last="76313">
+                32
+                </property>
+                <property first="76331" last="76331">
+                32
+                </property>
+                <property first="76349" last="76349">
+                32
+                </property>
+                <property first="76367" last="76367">
+                32
+                </property>
+                <property first="76385" last="76385">
+                32
+                </property>
+                <property first="76403" last="76403">
+                32
+                </property>
+                <property first="76421" last="76421">
+                32
+                </property>
+                <property first="76439" last="76439">
+                32
+                </property>
+                <property first="76457" last="76457">
+                32
+                </property>
+                <property first="76475" last="76475">
+                32
+                </property>
+                <property first="76493" last="76493">
+                32
+                </property>
+                <property first="76511" last="76511">
+                32
+                </property>
+                <property first="76529" last="76529">
+                32
+                </property>
+                <property first="76547" last="76547">
+                32
+                </property>
+                <property first="76565" last="76565">
+                32
+                </property>
+                <property first="76583" last="76583">
+                32
+                </property>
+                <property first="76601" last="76601">
+                32
+                </property>
+                <property first="76619" last="76619">
+                32
+                </property>
+                <property first="76637" last="76637">
+                32
+                </property>
+                <property first="76655" last="76655">
+                32
+                </property>
+                <property first="76673" last="76673">
+                32
+                </property>
+                <property first="76691" last="76691">
+                32
+                </property>
+                <property first="76709" last="76709">
+                32
+                </property>
+                <property first="76727" last="76727">
+                32
+                </property>
+                <property first="76745" last="76745">
+                32
+                </property>
+                <property first="76763" last="76763">
+                32
+                </property>
+                <property first="76781" last="76781">
+                32
+                </property>
+                <property first="76799" last="76799">
+                32
+                </property>
+                <property first="76817" last="76817">
+                32
+                </property>
+                <property first="76835" last="76835">
+                32
+                </property>
+                <property first="76853" last="76853">
+                32
+                </property>
+                <property first="76871" last="76871">
+                32
+                </property>
+                <property first="76889" last="76889">
+                32
+                </property>
+                <property first="76907" last="76907">
+                32
+                </property>
+                <property first="76925" last="76925">
+                32
+                </property>
+                <property first="76943" last="76943">
+                32
+                </property>
+                <property first="76961" last="76961">
+                32
+                </property>
+                <property first="76979" last="76979">
+                32
+                </property>
+                <property first="76997" last="76997">
+                32
+                </property>
+                <property first="77015" last="77015">
+                32
+                </property>
+                <property first="77033" last="77033">
+                32
+                </property>
+                <property first="77051" last="77051">
+                32
+                </property>
+                <property first="77069" last="77069">
+                32
+                </property>
+                <property first="77087" last="77087">
+                32
+                </property>
+                <property first="77105" last="77105">
+                32
+                </property>
+                <property first="77123" last="77123">
+                32
+                </property>
+                <property first="77141" last="77141">
+                32
+                </property>
+                <property first="77159" last="77159">
+                32
+                </property>
+                <property first="77177" last="77177">
+                32
+                </property>
+                <property first="77195" last="77195">
+                32
+                </property>
+                <property first="77213" last="77213">
+                32
+                </property>
+                <property first="77231" last="77231">
+                32
+                </property>
+                <property first="77249" last="77249">
+                32
+                </property>
+                <property first="268435524" last="268435524">
+                2
+                </property>
+                <property first="268435544" last="268435544">
+                2
+                </property>
+            </propclass>
+            <propclass name="mode">
+            </propclass>
+            <propclass name="notation">
+            </propclass>
+            <propclass name="reverse">
+            </propclass>
+            <propclass name="bold">
+            </propclass>
+            <propclass name="row_height">
+            </propclass>
+            <propclass name="color">
+            </propclass>
+            <propclass name="compared">
+            </propclass>
+            <propclass name="analog_bounds">
+            </propclass>
+            <propclass name="fixedpoint">
+            </propclass>
+            <propclass name="floating_encoding">
+            </propclass>
+            <propclass name="floating_notation">
+            </propclass>
+            <propclass name="floating_precision">
+            </propclass>
+            <propclass name="rounding_method">
+            </propclass>
+            <propclass name="aliasname">
+            </propclass>
+        </propertybase>
+    </propertybases>
+    <prefbases>
+        <prefbase id="0" >
+            <pref name="End Time" value="10337648640" />
+            <pref name="Start Time" value="0" />
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="4638430000" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+    <virtualsources>
+        <virtualnamedrows>
+        </virtualnamedrows>
+        <virtualbuses>
+            <virtualbus id="74385" name="MSG_C1" group="false" analog="false">
+                    AAAAcQAcgAGSIgE2En4SNhLuAQAAMhZyHjIW8i4AEBJ2Ej4S9gcSLgAAchYyHvIWMm4BAFYE/gFRAG5l        BfJEBQRyLhAAEvYDSAUCdhIuAAFVBB5UBWQJVASSCgAEzAoEDy6AADUoAREAAAAA
+|
+            </virtualbus>
+            <virtualbus id="75826" name="MSG_C2" group="false" analog="false">
+                    AAAAcAALgAAzKAF2Ej4S9hIuAEByFjIe8gEWMm4AABI2Ev5MAAluBAAyFvIDHjIWci5RAvZEBQJ2Ei5A        AHUEHlsF7gABVQR+TwDuBwBJBXJEBQLyLgAQEo0KAVAKCwByFjIe8hYyboAA1C0BEQAA
+|
+            </virtualbus>
+            <virtualbus id="77267" name="Bubble" group="false" analog="false">
+                    AAAASQA3gQDULQEyHvIDFjJuEgAANhL+EjYSbjIQABbyAR4yFnIuEgAB9hI+EnYSLvIfAAAWMh5yFjLu        EgAENhJ+EjYS7gEyCAAWclMxAREAAAAA
+|
+            </virtualbus>
+        </virtualbuses>
+        <virtualalias>
+        </virtualalias>
+        <virtualbusalias>
+                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        +AfPMwEQvmwCCLozARCrMwEQQjEBEQAA
+|
+        </virtualbusalias>
+        <virtualanalogalias>
+        </virtualanalogalias>
+        <virtualanalogbusalias>
+        </virtualanalogbusalias>
+        </virtualsources>
+</config>

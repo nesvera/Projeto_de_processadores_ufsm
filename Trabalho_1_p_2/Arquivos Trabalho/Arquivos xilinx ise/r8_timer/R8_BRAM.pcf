@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Mar 30 14:26:12 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "rst" LOCATE = SITE "A8" LEVEL 1;
+COMP "display_en_n<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "display_en_n<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "display_en_n<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "display_en_n<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "segments<0>" LOCATE = SITE "M13" LEVEL 1;
+COMP "segments<1>" LOCATE = SITE "L14" LEVEL 1;
+COMP "segments<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "segments<3>" LOCATE = SITE "M14" LEVEL 1;
+COMP "segments<4>" LOCATE = SITE "U18" LEVEL 1;
+COMP "segments<5>" LOCATE = SITE "U17" LEVEL 1;
+COMP "segments<6>" LOCATE = SITE "T18" LEVEL 1;
+COMP "segments<7>" LOCATE = SITE "T17" LEVEL 1;
+SCHEMATIC END;
+

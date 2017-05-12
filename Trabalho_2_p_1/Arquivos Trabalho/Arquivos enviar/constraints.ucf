@@ -1,0 +1,21 @@
+net "clk" loc = v10;
+
+net "rst" loc = A8;
+
+net "port_io[15]" loc = T5;	//Slide_switch 7
+net "port_io[14]" loc = V8;	//Slide_switch 6
+net "port_io[13]" loc = U8;	//Slide_switch 5
+net "port_io[12]" loc = N8;	//Slide_switch 4
+net "port_io[11]" loc = M8;	//Slide_switch 3
+net "port_io[10]" loc = V9;	//Slide_switch 2
+net "port_io[9]" loc = T9;		//Slide_switch 1
+net "port_io[8]" loc = T10;	//Slide_switch 0
+net "port_io[7]" loc = T11;	//Led 7
+net "port_io[6]" loc = R11;	//Led 6
+net "port_io[5]" loc = N11;	//Led 5
+net "port_io[4]" loc = M11;	//Led 4
+net "port_io[3]" loc = V15;	//Led 3
+net "port_io[2]" loc = U15;	//Led 2
+net "port_io[1]" loc = V16;	//Led 1
+net "port_io[0]" loc = U16;	//Led 0
+

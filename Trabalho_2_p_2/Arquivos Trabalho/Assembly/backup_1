@@ -1,0 +1,452 @@
+;----------------------------------------------------------------------------------------------------------------------------
+;            Projeto de Processadores
+;        Descrição: I/O ports
+;----------------------------------------------------------------------------------------------------------------------------
+
+;----------------------------------------------------------------------------------------------------------------------------
+; Pseudocode
+;----------------------------------------------------------------------------------------------------------------------------
+;
+;                                       // R8_uC and CryptoMessage device need to have the same "a" and "b"
+;   a = 6;                              // "a" is a primitive square root of "q"
+;   q = 251;                            // "q" is a prime number
+;
+;   randNumber = 0;                     // This is a fake randNumber, it will be just a incremental cont... randNumber < q
+;
+;   msg_c1[80];                         // Message arrays
+;   msg_c2[80];
+;   ind = 0;                            // Array index
+;
+;   main(){
+;       set_port( address_port_A(R1) );                                 // Configure the input/output pins for CryptoMessage devices communication
+;       set_port( address_port_B(R1) );
+;
+;       while(1){
+;
+;           // ----------------  CryptoMessage_A 
+;           while(){                                                
+;               if( portA_read_keyExchange() = 1 ) break;           // R8_uC waits for activation of CryptoMessage_A.keyExchange               
+;           }
+;
+;           portA_set_input(7-0);                                   // R8_uC configures portA pins to read values from CryptoMessage_A.data_out
+;           portA_read_data_IN();                                   // R8_uC reads magicNumber from CryptoMessage_A
+;
+;           magicNumber(R12) = calculate_key(R13, R14, R15);        // R8_uC calculates your magicNumber
+;
+;           portA_set_output(7-0);                                  // R8_uC configures portA pins to write values on CryptoMessage_A.data_in
+;           portA_write_data_OUT();                                 // R8_uC sends your magicNumber to CryptoMessage_A
+;           portA_send_ack();                                       // R8_uC sends ack signal to CryptoMessage_A
+;
+;           crypto_key(R12) = generate_crypto_key(R13,R14,R15);    // R8_uC and CryptoMessage device generate cryptographic key
+;
+;           while(){                                                
+;               if( portA_read_data_av() = 1 ) break;               // R8_uC waits for activation of CryptoMessage_A.data_av               
+;           }
+;
+;           set_portA_input(7-0);                                   // R8_uC configures portA pins to read values from CryptoMessage_A.data_out
+;           portA_read_data_IN();                                   // R8_uC reads caracter from CryptoMessage_A
+;
+;           portA_send_ack();                                       // R8_uC send ack signal to CryptoMessage_A
+;
+;           msg_c1[ind] = caracter_cript xor crypto_key;            // R8_uC decrypts the caracter received from CryptoMessage_A and saves in the array
+
+            // ----------------  CryptoMessage_B 
+            while(){                                                
+                if( portB_read_keyExchange() = 1 ) break;           // R8_uC waits for activation of CryptoMessage_B.keyExchange               
+            }
+            portB_set_input(7-0);                                   // R8_uC configures portB pins to read values from CryptoMessage_B.data_out
+            portB_read_data_IN();                                   // R8_uC reads magicNumber from CryptoMessage_B
+
+            magicNumber = calculate_magicNumber();                  // R8_uC calculates your magicNumber
+
+            portB_set_output(7-0);                                  // R8_uC configures portB pins to write values on CryptoMessage_B.data_in
+            portB_write_data_OUT();                                 // R8_uC sends your magicNumber to CryptoMessage_B
+            portB_send_ack();                                       // R8_uC sends ack signal to CryptoMessage_B
+
+            crypto_key = generate_crypto_key();                     // R8_uC and CryptoMessage device generate cryptographic key
+
+            while(){                                                
+                if( portB_read_data_av() = 1 ) break;               // R8_uC waits for activation of CryptoMessage_B.data_av               
+            }
+
+            set_portB_input(7-0);                                   // R8_uC configures portB pins to read values from CryptoMessage_B.data_out
+            portB_read_data_IN();                                   // R8_uC reads caracter from CryptoMessage_B
+
+            portB_send_ack();                                       // R8_uC send ack signal to CryptoMessage_B
+
+            msg_c2[ind] = caracter_cript xor crypto_key;            // R8_uC decrypts the caracter received from CryptoMessage_B and saves in the array
+
+            if( ind < 79 ){                                         // Circular array
+                ind++;
+            }else{
+                ind = 0;            
+            }
+        }
+    }
+
+;   set_port( int addr_port(REG1) ){                        // Default configuration of I/O ports
+;       addr_enable_reg = addr_port;                        // Address of enable register
+;       addr_config_reg = addr_port + 1;                    // Address of config register
+;       addr_data_reg = addr_port + 2;                      // Address of data register
+;
+;       Enable_reg = "0000000000000000"
+;       Config_reg = "0001011011111111"                     // Config_reg(7 downto 0) = data_in     (input)         crypto_data_out
+;                                                           // Config_reg(8) = tristate_ctrl        (output)
+;                                                           // Config_reg(9) = data_av              (input)
+;                                                           // Config_reg(10) = keyExchange         (input)
+;                                                           // Config_reg(11) = ack                 (output)
+;                                                           // Config_reg(12) = eom                 (input)
+;
+;       Data_reg =   "0000000100000000"                     // Just enable trist_ctrl, then crypto will output data
+;       Enable_reg = "0001111111111111"
+;   }
+
+    calculate_key( int base(REG13), int exponent(REG14), int prime(REG15)  ){           // Function to calculate magicNumber and crypto key
+        x = randNumber(REG12);
+        sum = 1;
+
+        while( x > 0 ){
+            sum = sum * base;
+            x--;
+        }
+
+        quocient = sum / prime;
+
+        aux = quocient*q;
+        resto = sum - aux;     // Reminder
+
+        key = resto;                //  magicNumber =  a^x mod q
+
+        return key(REG11);
+    }
+
+;
+;----------------------------------------------------------------------------------------------------------------------------
+
+.CODE
+
+main:
+    LDH  R1, PORT_A_ADDRESS             
+    LDL  R1, PORT_A_ADDRESS             ; R1 <- &PORT_A
+    JSRD #crypto_init                   ; Go to function crypto_init to configure PORT_A registers
+
+    LDH  R1, PORT_B_ADDRESS             
+    LDL  R1, PORT_B_ADDRESS             ; R1 <- &PORT_B
+    JSRD #crypto_init                   ; Go to function crypto_init to configure PORT_B registers
+ 
+while:                                  ; main loop
+    LDH  R1, PORT_A_ADDRESS             
+    LDL  R1, PORT_A_ADDRESS             ; R1 <- &PORT_A
+    ADDI R1, #02h                       ; R1 <- &PORT_A.dataReg
+    
+wait_ke_A:                              ; Wait Crypto_A.keyExchange = PORT_A.dataReg(10) = 1
+    LD   R2, R0, R1                     ; R2 <- PORT_A.dataReg
+
+    LDH  R3, #04h
+    LDL  R3, #00h                       ; R3 <- "0000010000000000"          MASK bit(10) = 1
+
+    AND  R4, R2, R3                     ; R4 <- R2 & R3
+
+    JMPZD #wait_ke_A                    ; if PORT_A.dataReg(10) = 0 jump
+                                        ; senão
+
+    LDH  R1, PORT_A_ADDRESS             
+    LDL  R1, PORT_A_ADDRESS             ; R1 <- &PORT_A
+    JSRD #crypto_set_in                 ; Set PORT_A.configReg(7 downto 0) = INPUT
+
+    ADD  R2, R1, R0                     ; R2 <- &PORT_A
+    ADDI R2, #02h                       ; R2 <- &PORT_A.DataReg
+
+    LD   R3, R2, R0                     ; R3 <- PORT_A.DataReg
+
+    LDH  R4, #00h
+    LDL  R4, #FFh                       ; R4 <- MASK "0000000011111111"
+
+    AND  R3, R3, R4                     ; R3 receives just the 8bits of data from CRYPTO_A
+                                        ; R3 has the magicNumber from CryptoMessage_A
+
+                                        ; Now R8_uC will calculate your magicNumber
+    LDH  R13, #A
+    LDL  R13, #A                        ; R13(BASE) <- A (primitive root, constant)
+
+    LDH  R14, RANDNUMBER
+    LDL  R14, RANDNUMBER                ; R14(exponent) <- RANDNUMBER (variable, "random")
+
+    LDH  R15, #Q
+    LDL  R15, #Q                        ; R15 <- Q (prime number, constant)
+
+    JSRD #calculate_key                 ; R12 will receive the result of the function calculate_key, in this case the magicNumber
+
+    LDH R1, #MAGICNUMBER_A
+    LDL R1, #MAGICNUMBER_A              ; R1 <- &MAGICNUMBER_A
+    ST  R12, R1, R0                     ; MAGICNUMBER_A <- R12
+
+    LDH  R1, PORT_A_ADDRESS             
+    LDL  R1, PORT_A_ADDRESS             ; R1 <- &PORT_A
+    JSRD #crypto_set_out                ; Set PORT_A.configReg(7 downto 0) = OUTPUT
+
+    JSRD #crypto_write_data             ; R8_uC sends your magicNumber to CryptoMessage_A
+
+    JSRD #crypto_write_ack              ; R8_uC sends ack signal to CryptoMessage_A
+
+                                        ; Now R8_uC will calculate cryptographic key
+                                        ; R12 = magicNumber
+    ADD R13, R0, R12                    ; R13(BASE) <- magicNumber
+
+    LDH  R14, RANDNUMBER
+    LDL  R14, RANDNUMBER                ; R14(exponent) <- RANDNUMBER (variable, "random")
+
+    LDH  R15, #Q
+    LDL  R15, #Q                        ; R15 <- Q (prime number, constant)
+
+    JSRD #calculate_key                 ; R12 will receive the result of the function calculate_key, in this case the cryptographic key
+
+    LDH  R1, PORT_A_ADDRESS             
+    LDL  R1, PORT_A_ADDRESS             ; R1 <- &PORT_A
+    ADDI R1, #02h                       ; R1 <- &PORT_A.dataReg
+
+while_dav_A:                            ; Wait Crypto_A.data_av = PORT_A.dataReg(9) = 1
+    LD   R2, R0, R1                     ; R2 <- PORT_A.dataReg
+
+    LDH  R3, #02h
+    LDL  R3, #00h                       ; R3 <- "0000001000000000"          MASK bit(9) = 1
+
+    AND  R4, R2, R3                     ; R4 <- R2 & R3
+
+    JMPZD #while_dav_A                  ; if PORT_A.dataReg(9) = 0 jump
+                                        ; senão
+
+    LDH  R1, PORT_A_ADDRESS             
+    LDL  R1, PORT_A_ADDRESS             ; R1 <- &PORT_A
+    JSRD #crypto_set_in                 ; Set PORT_A.configReg(7 downto 0) = INPUT
+
+    ADD  R2, R1, R0                     ; R2 <- &PORT_A
+    ADDI R2, #02h                       ; R2 <- &PORT_A.DataReg
+
+    LD   R3, R2, R0                     ; R3 <- PORT_A.DataReg
+
+    LDH  R4, #00h
+    LDL  R4, #FFh                       ; R4 <- MASK "0000000011111111"
+
+    AND  R3, R3, R4                     ; R3 receives just the 8bits of data from CRYPTO_A
+                                        ; R3 has the encrypt caracter from CryptoMessage_A
+
+    JSRD #crypto_write_ack              ; R8_uC sends ack signal to CryptoMessage_A
+
+                                        ; R12 = crypto_key
+                                        ; R3  = caracter encrypted
+
+    XOR R10, R3, R12                    ; R10 = caracter decrypted
+
+    LDH R4, #MSG_C1
+    LDL R4, #MSG_C1                     ; R4 <- &MSG_C1
+
+    LDH R5, INDEX
+    LDL R5, INDEX                       ; R5 <- INDEX
+
+    ADD R4, R4, R5                      ; R4 <- &MSG_C1+INDEX
+
+    ST  R10, R4, R0                     ; MSG_C1[index] <- R10
+
+; ---------------------------------------------------------------------------------------------
+; CryptoMessage functions
+; This functions work with with both CryptoMessage Devices 
+; You need to pass the ADDRESS of the PORT referent to the cryptoMessage device that you want
+; ----------------------------------------------------------------------------------------------
+crypto_init:                            ; Default settings of CryptoMessage X 
+                                        ; param  : R1    <- &PORT.EnableReg
+                                        ; return : NONE
+
+    ADD  R2, R0, R1
+    ADDI R2, #01h                       ; R2    <- &PORT.ConfigReg
+    ADD  R3, R0, R1
+    ADDI R3, #02h                       ; R3    <- &PORT.DataReg
+
+    ST   R0, R1, R0                     ; PORT.EnableReg    <- "0000000000000000"
+
+    LDH  R4, #16h
+    LDL  R4, #FFh                       ; R4    <- "0001011011111111"
+    ST   R4, R2, R0                     ; PORT.ConfigReg    <- "0001011011111111"
+
+    LDH  R4, #01h
+    LDL  R4, #00h                       ; R4    <- "0000000100000000"
+    ST   R4, R3, R0                     ; PORT.DataReg      <- "0000000100000000"
+
+    LDH  R4, #1Fh
+    LDL  R4, #FFh                       ; R4    <- "0001111111111111"
+    ST   R4, R1, R0                     ; PORT.EnableReg    <- "0001111111111111"
+
+    RTS                                 ; return
+
+crypto_set_in:                          ; Set PORT.ConfigReg(7 downto 0) = INPUT
+                                        ; param  : R1    <- &PORT.EnableReg
+                                        ; return : NONE 
+
+    ADD  R2, R0, R1
+    ADDI R2, #01h                       ; R2    <- &PORT.ConfigReg
+
+    LD   R3, R0, R2                     ; R3 <- PORT_A.ConfigReg
+
+    LDH  R4, #FFh 
+    LDL  R4, #00h                       ; R4 <- MASK "1111111100000000"
+
+    LDH  R5, #00h
+    LDL  R5, #FFh                       ; R5 <- MASK "0000000011111111"
+
+    AND  R6, R3, R4                     ; Keep the 8 more significant bits from PORT_A.ConfigReg
+    OR   R6, R6, R5                     ; PORT_A.ConfigReg(7 downto 0) = INPUT
+                                        ; R6 = New value to PORT_A.ConfigReg
+
+    ST   R0, R1, R0                     ; PORT.EnableReg    <- "0000000000000000"
+
+    ST   R6, R2, R0                     ; PORT.ConfigReg    <- R6
+
+    LDH  R4, #1Fh
+    LDL  R4, #FFh                       ; R4    <- "0001111111111111"
+    ST   R4, R1, R0                     ; PORT.EnableReg    <- "0001111111111111"
+
+    RTS                                 ; return
+
+crypto_set_out:                         ; Set PORT.ConfigReg(7 downto 0) = INPUT
+                                        ; param  : R1    <- &PORT.EnableReg 
+                                        ; return : NONE
+
+    ADD  R2, R0, R1
+    ADDI R2, #01h                       ; R2    <- &PORT.ConfigReg
+    ADD  R7, R0, R1
+    ADDI R7, #02h                       ; R7    <- &PORT.DataReg
+
+    LD   R3, R0, R2                     ; R3 <- PORT_A.ConfigReg
+
+    LDH  R4, #FFh 
+    LDL  R4, #00h                       ; R4 <- MASK "1111111100000000"
+
+    AND  R6, R3, R4                     ; Keep the 8 more significant bits from PORT_A.ConfigReg
+                                        ; PORT_A.ConfigReg(7 downto 0) = OUTPUT
+                                        ; R6 = New value to PORT_A.ConfigReg
+
+    ST   R0, R1, R0                     ; PORT.EnableReg    <- "0000000000000000"
+
+    ST   R6, R2, R0                     ; PORT.ConfigReg    <- R6
+
+    LDH  R4, #11h
+    LDL  R4, #00h
+
+    LD   R8, R0, R7                     ; R8 <- PORT_A.DataReg
+    AND  R4, R8, R4
+
+    ST   R4, R7, R0                     ; PORT.DataReg      <- "R4"
+
+    LDH  R4, #1Fh
+    LDL  R4, #FFh                       ; R4    <- "0001111111111111"
+    ST   R4, R1, R0                     ; PORT.EnableReg    <- "0001111111111111"
+
+    RTS                                 ; return
+
+crypto_write_data:                      ; Set port_io(7 downto 0) as input and write on device
+                                        ; param  : R1    <- &PORT.EnableReg 
+                                        ; param  : R12   <- magicNumber
+                                        ; return : NONE
+
+    ADD  R2, R0, R1
+    ADDI R2, #02h                       ; R2    <- &PORT.DataReg
+
+    LD   R3, R0, R2                     ; R3 <- PORT_A.DataReg
+
+    LDH  R4, #FFh 
+    LDL  R4, #00h                       ; R4 <- MASK "1111111100000000"
+
+    AND  R5, R3, R4                     ; Keep the 8 more significant bits from PORT_A.DataReg
+    OR   R5, R5, R12                    ; PORT_A.DataReg(7 downto 0) = magicNumber
+                                        ; R5 = New value to PORT_A.DataReg
+
+    ST   R5, R2, R0                     ; PORT.DataReg      <- "R5"
+
+    RTS                                 ; return
+
+crypto_read_data:                       ; Set port_io(7 downto 0) as output and reads from device
+                                        ; param  : R1    <- &PORT.EnableReg 
+                                        ; return : R9    <- PORT.DataReg
+
+crypto_write_ack:
+                                        ; param  : R1    <- &PORT.EnableReg 
+                                        ; return : NONE
+
+    ADD  R2, R0, R1
+    ADDI R2, #02h                       ; R2    <- &PORT.DataReg
+
+    LD   R3, R0, R2                     ; R3 <- PORT_A.DataReg
+
+    LDH  R4, #F7h 
+    LDL  R4, #FFh                       ; R4 <- MASK "1111011111111111" 
+
+    AND  R5, R3, R4                     ; Clear ack
+
+    LDH  R6, #08h
+    LDL  R6, #00h                       ; R6 <- MASK "0000100000000000"
+
+    OR   R5, R5, R6                     ; Set ack
+    ST   R5, R2, R0                     ; PORT.DataReg      <- "R5"
+
+    nop                                 ; delay
+
+    AND  R5, R5, R4                     ; Clear ack
+    ST   R5, R2, R0                     ; PORT.DataReg      <- "R5"
+
+    RTS                                 ; return    
+
+; -----------------------------------------------------------------------------------------------
+; Function calculate_key is used to find magicalNumer and crypto_key
+; -----------------------------------------------------------------------------------------------
+calculate_key:
+                                        ; param  : R15 <- 
+                                        ; param  : R14 <-
+                                        ; param  : R13 <- 
+                                        ; return : R12 contains the magicNumber or the crypto_key
+
+    RTS                                 
+
+
+; ------------------------------------------------------------------------------------------------
+;
+; ------------------------------------------------------------------------------------------------
+
+fim:
+    HALT                 	            ; End of code     
+
+.ENDCODE
+
+.DATA
+	; Address of register from PORT_A
+    PORT_A_ADDRESS:	           db		#8000h
+    
+    ; Address of register from PORT_B
+    PORT_B_ADDRESS:            db       #9000h
+
+    ; Prime number of key equation
+    Q:  db      #00FBh                  ; Q = 251
+
+    ; Primitive square root of "Q"
+    A:  db      #0006h                  ; A = 6
+
+    ; "Randon Number"
+    RANDNUMBER:     db      #0000h
+
+    ; Index of the array
+    INDEX:          db      #0000h
+
+    ; magicNumbers
+    MAGICNUMBER_A:  db      #0000h
+    MAGICNUMBER_B:  db      #0000h
+
+    ; cryptoKey
+    CRYPTOKEY_A:    db      #0000h
+    CRYPTOKEY_B:    db      #0000h
+
+    ; msg_c1 and msg_c2 has 80 values which
+    MSG_C1: db  #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0
+
+    MSG_C2: db  #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0, #0
+    
+
+.ENDDATA

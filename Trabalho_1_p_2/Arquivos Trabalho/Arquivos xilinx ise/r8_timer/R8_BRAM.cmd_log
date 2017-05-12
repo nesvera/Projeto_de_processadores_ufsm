@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_timer/R8_BRAM.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_timer/R8_BRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Documents and Settings/dfdfjf/Desktop/VHDL sintese/ucf.ucf" -p xc6slx16-csg324-3 "R8_BRAM.ngc" R8_BRAM.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_BRAM_map.ncd R8_BRAM.ngd R8_BRAM.pcf 
+par -w -intstyle ise -ol high -mt off R8_BRAM_map.ncd R8_BRAM.ncd R8_BRAM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_BRAM.twx R8_BRAM.ncd -o R8_BRAM.twr R8_BRAM.pcf 
+bitgen -intstyle ise -f R8_BRAM.ut R8_BRAM.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_timer/R8_BRAM.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_timer/R8_BRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx16-csg324-3 "R8_BRAM.ngc" R8_BRAM.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_BRAM_map.ncd R8_BRAM.ngd R8_BRAM.pcf 
+par -w -intstyle ise -ol high -mt off R8_BRAM_map.ncd R8_BRAM.ncd R8_BRAM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_BRAM.twx R8_BRAM.ncd -o R8_BRAM.twr R8_BRAM.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f R8_BRAM.ut R8_BRAM.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_timer/R8_BRAM.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_timer/R8_BRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx16-csg324-3 "R8_BRAM.ngc" R8_BRAM.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_BRAM_map.ncd R8_BRAM.ngd R8_BRAM.pcf 
+par -w -intstyle ise -ol high -mt off R8_BRAM_map.ncd R8_BRAM.ncd R8_BRAM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_BRAM.twx R8_BRAM.ncd -o R8_BRAM.twr R8_BRAM.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f R8_BRAM.ut R8_BRAM.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_timer/R8_BRAM.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/r8_timer/R8_BRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc6slx16-csg324-3 "R8_BRAM.ngc" R8_BRAM.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_BRAM_map.ncd R8_BRAM.ngd R8_BRAM.pcf 
+par -w -intstyle ise -ol high -mt off R8_BRAM_map.ncd R8_BRAM.ncd R8_BRAM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_BRAM.twx R8_BRAM.ncd -o R8_BRAM.twr R8_BRAM.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f R8_BRAM.ut R8_BRAM.ncd 

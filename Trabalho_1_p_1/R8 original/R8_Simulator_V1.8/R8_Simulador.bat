@@ -1,0 +1,1 @@
+java -classpath .\bin Simulador R8

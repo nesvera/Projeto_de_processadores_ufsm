@@ -1,0 +1,17 @@
+net "clk" loc = v10;
+
+net "rst" loc = A8;
+
+net "display_en_n[0]" loc = n16;
+net "display_en_n[1]" loc = n15;
+net "display_en_n[2]" loc = p18;
+net "display_en_n[3]" loc = p17;
+
+net "segments[0]" loc = M13;
+net "segments[1]" loc = L14;
+net "segments[2]" loc = N14;
+net "segments[3]" loc = M14;
+net "segments[4]" loc = U18;
+net "segments[5]" loc = U17;
+net "segments[6]" loc = T18;
+net "segments[7]" loc = T17;

@@ -1,0 +1,8 @@
+vhdl work "Util_package.vhd"
+vhdl work "RegisterNbits.vhd"
+vhdl work "R8.vhd"
+vhdl work "Memory.vhd"
+vhdl work "DisplayCtrl.vhd"
+vhdl work "ClockManager.vhd"
+vhdl work "BCDConv.vhd"
+vhdl work "R8_BRAM.vhd"
