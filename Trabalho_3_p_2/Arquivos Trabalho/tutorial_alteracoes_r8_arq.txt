@@ -1,0 +1,125 @@
+﻿Instruções adicionadas:
+
+	MUL RS1, RS2 		HIGH,LOW <= R1*R2                  // Divisao e multiplicacao sera executada em 3 ciclos de clock
+	DIV RS1, RS2		HIGH <= R1%R2	LOG <= R1/R2
+	MFH RT			RT <= HIGH                            // MFH e MFL sera executada em 4 ciclos de clock
+	MFL RT			RT <= LOW
+
+FSM:
+	MUL, DIV 	Sfetch -> Sreg -> Salu -> Sfetch
+	MFH, MFL	Sfetch -> Sreg -> Salu -> Swbk -> Sfetch
+
+Código adicionado ao R8.arq
+
+Para o trabalho 2 parte 2
+
+MUL MUL 2 0 0 1 3 B -3 -1 B OP1 RT RS1 OP2 OP1 RT RS1 OP2 
+   $FLAG_DEP NULL
+   $FLAGS 0
+   $ENDFLAGS
+DIV DIV 2 0 0 1 3 B -3 -1 C OP1 RT RS1 OP2 OP1 RT RS1 OP2
+   $FLAG_DEP NULL
+   $FLAGS 0
+   $ENDFLAGS
+MFH MFH 1 0 0 1 4 B -3 0 D OP1 RT OP2 OP3 OP1 RT OP2 OP3
+   $FLAG_DEP NULL
+   $FLAGS 0
+   $ENDFLAGS
+MFL MFL 1 0 0 1 4 B -3 0 E OP1 RT OP2 OP3 OP1 RT OP2 OP3
+   $FLAG_DEP NULL
+   $FLAGS 0
+   $ENDFLAGS
+
+Para o trabalho 3 parte 1
+
+   RTI   = return da interrupção
+   PUSHF = armazena as flags na pilha
+   POPF  = recupera as flags da pilha
+
+RTI RTI 0 0 0 1 4 B 0 0 F OP1 OP2 OP3 OP4 OP1 OP2 OP3 OP4
+   $FLAG_DEP NULL
+   $FLAGS 0
+   $ENDFLAGS
+PUSHF PUSHF 0 0 0 1 4 C -3 0 C OP1 OP2 OP3 OP4 OP1 OP2 OP3 OP4
+   $FLAG_DEP NULL
+   $FLAGS 0
+   $ENDFLAGS
+POPF POPF 0 0 0 1 4 C -3 0 D OP1 OP2 OP3 OP4 OP1 OP2 OP3 OP4
+   $FLAG_DEP NULL
+   $FLAGS 0
+   $ENDFLAGS
+ 
+    
+Para o trabalho 3 parte 2
+
+   LDISRA = salva o endereço de desvio de interrupção
+
+LDISRA LDISRA 1 0 0 1 4 C 0 -1 E OP1 OP2 RS1 OP3 OP1 OP2 RS1 OP3
+   $FLAG_DEP NULL
+   $FLAGS 0
+   $ENDFLAGS
+
+-> Significado dos campos:
+
+mneumonico           MUL               DIV               MFH               MFL               RTS               PUSHF             POPF			        LDISRA		
+instrucaoAssociada   MUL               DIV               MFH               MFL               RTS               PUSHF             POPF			        LDISRA
+nregistradores       2                 2                 1                 1                 0                 0                 0			           1
+nconstantes          0                 0                 0                 0                 0                 0                 0			           0
+nlabels              0                 0                 0                 0                 0                 0                 0			           0
+npalavras            1                 1                 1                 1                 1                 1                 1			           1
+nciclos              3                 3                 4                 4                 4                 4                 4			           4
+codigo               B -3 -1 B         B -3 -1 C         B -3 0 D          B -3 0 E          B 0 0 F           C -3 0 C          C -3 0 D		        C 0 -1 E
+campoEscrita         OP1 RT RS1 OP2    OP1 RT RS1 OP2    OP1 RT OP2 OP3    OP1 RT OP2 OP3    OP1 OP2 OP3 OP4   OP1 OP2 OP3 OP4   OP1 OP2 OP3 OP4	  OP1 OP2 RS1 OP3  
+campoMontagem        OP1 RT RS1 OP2    OP1 RT RS1 OP2    OP1 RT OP2 OP3    OP1 RT OP2 OP3    OP1 OP2 OP3 OP4   OP1 OP2 OP3 OP4   OP1 OP2 OP3 OP4     OP1 OP2 RS1 OP3
+
+-> Para o campo "codigo":
+
+MUL                        
+   B     = opcode1
+   -3    = RT
+   -1    = RS1
+   B     = opcode2
+
+DIV
+   B     = opcode1
+   -3    = RT
+   -1    = RS1
+   C     = opcode2
+
+MFH
+   B     = opcode1
+   -3    = RT
+   0     = (nenhum registrador usado)
+   D     = opcode2
+
+MFL
+   B     = opcode1
+   -3    = RT
+   0     = (nenhum registrador usado)
+   E     = opcode2
+
+-> Para o campo "campoEscrita" e "campoMontagem"
+
+MUL                        
+   OP1   = nao sei o significado
+   RT    = RT será usado como RS1
+   RS1   = RS1 sera usado
+   OP2   = RS2 nao sera usado
+
+DIV
+   OP1   = nao sei o significado
+   RT    = RT será usado como RS1
+   RS1   = RS1 sera usado
+   OP2   = RS2 nao sera usado
+
+MFH
+   OP1   = nao sei o significado
+   RT    = RT será usado
+   OP2   = RS1 nao sera usado
+   OP3   = RS2 nao sera usado
+
+MFL
+   OP1   = nao sei o significado
+   RT    = RT nao será usado
+   OP2   = RS1 sera usado
+   OP3   = RS2 sera usado

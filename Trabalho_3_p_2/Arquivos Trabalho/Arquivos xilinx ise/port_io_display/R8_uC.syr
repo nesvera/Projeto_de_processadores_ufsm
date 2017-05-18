@@ -1,0 +1,1056 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: R8_uC.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "R8_uC.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "R8_uC"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : R8_uC
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\Util_package.vhd" into library work
+Parsing package <Util_package>.
+Parsing package body <Util_package>.
+Parsing VHDL file "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\RegisterNbits.vhd" into library work
+Parsing entity <RegisterNbits>.
+Parsing architecture <behavioral> of entity <registernbits>.
+Parsing VHDL file "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\Flipflop.vhd" into library work
+Parsing entity <Flipflop>.
+Parsing architecture <behavioral> of entity <flipflop>.
+Parsing VHDL file "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\R8.vhd" into library work
+Parsing entity <R8>.
+Parsing architecture <behavioral> of entity <r8>.
+Parsing VHDL file "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\Memory.vhd" into library work
+Parsing entity <Memory>.
+Parsing architecture <BlockRAM> of entity <memory>.
+Parsing VHDL file "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\ClockManager.vhd" into library work
+Parsing entity <ClockManager>.
+Parsing architecture <xilinx> of entity <clockmanager>.
+Parsing VHDL file "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\BidirectionalPort.vhd" into library work
+Parsing entity <BidirectionalPort>.
+Parsing architecture <Behavioral> of entity <bidirectionalport>.
+Parsing VHDL file "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\AddressDecoder.vhd" into library work
+Parsing entity <AddressDecoder>.
+Parsing architecture <arch1> of entity <addressdecoder>.
+Parsing VHDL file "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\R8_uC.vhd" into library work
+Parsing entity <R8_uC>.
+Parsing architecture <arch1> of entity <r8_uc>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <R8_uC> (architecture <arch1>) with generics from library <work>.
+
+Elaborating entity <ClockManager> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <R8> (architecture <behavioral>) with generics from library <work>.
+
+Elaborating entity <Flipflop> (architecture <behavioral>) with generics from library <work>.
+
+Elaborating entity <AddressDecoder> (architecture <arch1>) with generics from library <work>.
+
+Elaborating entity <Memory> (architecture <BlockRAM>) with generics from library <work>.
+
+Elaborating entity <BidirectionalPort> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <RegisterNbits> (architecture <behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:634 - "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\R8_uC.vhd" Line 42: Net <dataP2_out[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\R8_uC.vhd" Line 46: Net <intr_B> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <R8_uC>.
+    Related source file is "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\R8_uC.vhd".
+        DATA_WIDTH = 16
+        ADDR_WIDTH = 16
+        IMAGE = "display_interface_BRAM.txt"
+INFO:Xst:3210 - "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\R8_uC.vhd" line 62: Output port <clk_div2> of the instance <DCM> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <dataP2_out> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <intr_B> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <R8_uC> synthesized.
+
+Synthesizing Unit <ClockManager>.
+    Related source file is "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\ClockManager.vhd".
+    Summary:
+	no macro.
+Unit <ClockManager> synthesized.
+
+Synthesizing Unit <R8>.
+    Related source file is "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\R8.vhd".
+        DATA_WIDTH = 16
+        ADDR_WIDTH = 16
+    Found 16-bit register for signal <pc>.
+    Found 16-bit register for signal <sp>.
+    Found 16-bit register for signal <ir>.
+    Found 16-bit register for signal <rA>.
+    Found 16-bit register for signal <rB>.
+    Found 16-bit register for signal <rALU>.
+    Found 16-bit register for signal <highReg>.
+    Found 16-bit register for signal <lowReg>.
+    Found 16-bit register for signal <israReg>.
+    Found 16-bit register for signal <registerFile<0>>.
+    Found 16-bit register for signal <registerFile<1>>.
+    Found 16-bit register for signal <registerFile<2>>.
+    Found 16-bit register for signal <registerFile<3>>.
+    Found 16-bit register for signal <registerFile<4>>.
+    Found 16-bit register for signal <registerFile<5>>.
+    Found 16-bit register for signal <registerFile<6>>.
+    Found 16-bit register for signal <registerFile<7>>.
+    Found 16-bit register for signal <registerFile<8>>.
+    Found 16-bit register for signal <registerFile<9>>.
+    Found 16-bit register for signal <registerFile<10>>.
+    Found 16-bit register for signal <registerFile<11>>.
+    Found 16-bit register for signal <registerFile<12>>.
+    Found 16-bit register for signal <registerFile<13>>.
+    Found 16-bit register for signal <registerFile<14>>.
+    Found 16-bit register for signal <registerFile<15>>.
+    Found 5-bit register for signal <currentState>.
+    Found 1-bit register for signal <en_interrupt>.
+    Found 1-bit register for signal <carryFlag>.
+    Found 1-bit register for signal <negativeFlag>.
+    Found 1-bit register for signal <zeroFlag>.
+    Found 1-bit register for signal <overflowFlag>.
+    Found 1-bit register for signal <clear_intr>.
+    Found finite state machine <FSM_0> for signal <currentState>.
+    -----------------------------------------------------------------------
+    | States             | 18                                             |
+    | Transitions        | 50                                             |
+    | Inputs             | 15                                             |
+    | Outputs            | 17                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | sidle                                          |
+    | Power Up State     | sidle                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <pc[15]_GND_15_o_add_0_OUT> created at line 143.
+    Found 17-bit adder for signal <GND_15_o_GND_15_o_add_72_OUT> created at line 229.
+    Found 17-bit adder for signal <GND_15_o_GND_15_o_add_75_OUT> created at line 272.
+    Found 17-bit adder for signal <n1026> created at line 308.
+    Found 17-bit adder for signal <GND_15_o_GND_15_o_add_80_OUT> created at line 308.
+    Found 17-bit adder for signal <n1031> created at line 352.
+    Found 17-bit adder for signal <GND_15_o_GND_15_o_add_85_OUT> created at line 352.
+    Found 16-bit adder for signal <opB[15]_GND_15_o_add_123_OUT> created at line 588.
+    Found 16-bit adder for signal <GND_15_o_opB[15]_add_130_OUT> created at line 619.
+    Found 16-bit adder for signal <PWR_10_o_opB[15]_add_131_OUT> created at line 621.
+    Found 16-bit adder for signal <opA[15]_opB[15]_add_134_OUT> created at line 628.
+    Found 16-bit adder for signal <GND_15_o_opB[15]_add_136_OUT> created at line 635.
+    Found 16-bit adder for signal <PWR_10_o_opB[15]_add_137_OUT> created at line 637.
+    Found 16-bit adder for signal <sp[15]_GND_15_o_add_337_OUT> created at line 734.
+    Found 16-bit subtractor for signal <GND_15_o_GND_15_o_sub_5_OUT<15:0>> created at line 156.
+    Found 16x16-bit multiplier for signal <opA[15]_opB[15]_MuLt_141_OUT> created at line 650.
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <registerFile>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <registerFile>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <registerFile>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 16-bit 16-to-1 multiplexer for signal <ir[7]_registerFile[15][15]_wide_mux_42_OUT> created at line 200.
+    Found 16-bit 16-to-1 multiplexer for signal <ir[3]_registerFile[15][15]_wide_mux_43_OUT> created at line 201.
+    Found 16-bit 16-to-1 multiplexer for signal <ir[11]_registerFile[15][15]_wide_mux_598_OUT> created at line 922.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred  15 Adder/Subtractor(s).
+	inferred 406 D-type flip-flop(s).
+	inferred 153 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <R8> synthesized.
+
+Synthesizing Unit <rem_16s_16s>.
+    Related source file is "".
+    Found 16-bit subtractor for signal <a[15]_unary_minus_1_OUT> created at line 0.
+    Found 16-bit subtractor for signal <b[15]_unary_minus_3_OUT> created at line 0.
+    Found 32-bit adder for signal <n0999> created at line 0.
+    Found 32-bit adder for signal <GND_17_o_b[15]_add_5_OUT> created at line 0.
+    Found 31-bit adder for signal <n1003> created at line 0.
+    Found 31-bit adder for signal <GND_17_o_b[15]_add_7_OUT> created at line 0.
+    Found 30-bit adder for signal <n1007> created at line 0.
+    Found 30-bit adder for signal <GND_17_o_b[15]_add_9_OUT> created at line 0.
+    Found 29-bit adder for signal <n1011> created at line 0.
+    Found 29-bit adder for signal <GND_17_o_b[15]_add_11_OUT> created at line 0.
+    Found 28-bit adder for signal <n1015> created at line 0.
+    Found 28-bit adder for signal <GND_17_o_b[15]_add_13_OUT> created at line 0.
+    Found 27-bit adder for signal <n1019> created at line 0.
+    Found 27-bit adder for signal <GND_17_o_b[15]_add_15_OUT> created at line 0.
+    Found 26-bit adder for signal <n1023> created at line 0.
+    Found 26-bit adder for signal <GND_17_o_b[15]_add_17_OUT> created at line 0.
+    Found 25-bit adder for signal <n1027> created at line 0.
+    Found 25-bit adder for signal <GND_17_o_b[15]_add_19_OUT> created at line 0.
+    Found 24-bit adder for signal <n1031> created at line 0.
+    Found 24-bit adder for signal <GND_17_o_b[15]_add_21_OUT> created at line 0.
+    Found 23-bit adder for signal <n1035> created at line 0.
+    Found 23-bit adder for signal <GND_17_o_b[15]_add_23_OUT> created at line 0.
+    Found 22-bit adder for signal <n1039> created at line 0.
+    Found 22-bit adder for signal <GND_17_o_b[15]_add_25_OUT> created at line 0.
+    Found 21-bit adder for signal <n1043> created at line 0.
+    Found 21-bit adder for signal <GND_17_o_b[15]_add_27_OUT> created at line 0.
+    Found 20-bit adder for signal <n1047> created at line 0.
+    Found 20-bit adder for signal <GND_17_o_b[15]_add_29_OUT> created at line 0.
+    Found 19-bit adder for signal <n1051> created at line 0.
+    Found 19-bit adder for signal <GND_17_o_b[15]_add_31_OUT> created at line 0.
+    Found 18-bit adder for signal <n1055> created at line 0.
+    Found 18-bit adder for signal <GND_17_o_b[15]_add_33_OUT> created at line 0.
+    Found 17-bit adder for signal <n1059> created at line 0.
+    Found 17-bit adder for signal <GND_17_o_b[15]_add_35_OUT> created at line 0.
+    Found 16-bit adder for signal <n1063> created at line 0.
+    Found 16-bit adder for signal <a[15]_b[15]_add_37_OUT> created at line 0.
+    Found 16-bit adder for signal <GND_17_o_a[15]_add_38_OUT[15:0]> created at line 0.
+    Found 32-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 31-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 29-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 28-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 27-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 26-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Summary:
+	inferred  37 Adder/Subtractor(s).
+	inferred  17 Comparator(s).
+	inferred 275 Multiplexer(s).
+Unit <rem_16s_16s> synthesized.
+
+Synthesizing Unit <div_16s_16s>.
+    Related source file is "".
+    Found 16-bit subtractor for signal <a[15]_unary_minus_1_OUT> created at line 0.
+    Found 16-bit subtractor for signal <b[15]_unary_minus_3_OUT> created at line 0.
+    Found 32-bit adder for signal <n1002> created at line 0.
+    Found 32-bit adder for signal <GND_19_o_b[15]_add_5_OUT> created at line 0.
+    Found 31-bit adder for signal <n1006> created at line 0.
+    Found 31-bit adder for signal <GND_19_o_b[15]_add_7_OUT> created at line 0.
+    Found 30-bit adder for signal <n1010> created at line 0.
+    Found 30-bit adder for signal <GND_19_o_b[15]_add_9_OUT> created at line 0.
+    Found 29-bit adder for signal <n1014> created at line 0.
+    Found 29-bit adder for signal <GND_19_o_b[15]_add_11_OUT> created at line 0.
+    Found 28-bit adder for signal <n1018> created at line 0.
+    Found 28-bit adder for signal <GND_19_o_b[15]_add_13_OUT> created at line 0.
+    Found 27-bit adder for signal <n1022> created at line 0.
+    Found 27-bit adder for signal <GND_19_o_b[15]_add_15_OUT> created at line 0.
+    Found 26-bit adder for signal <n1026> created at line 0.
+    Found 26-bit adder for signal <GND_19_o_b[15]_add_17_OUT> created at line 0.
+    Found 25-bit adder for signal <n1030> created at line 0.
+    Found 25-bit adder for signal <GND_19_o_b[15]_add_19_OUT> created at line 0.
+    Found 24-bit adder for signal <n1034> created at line 0.
+    Found 24-bit adder for signal <GND_19_o_b[15]_add_21_OUT> created at line 0.
+    Found 23-bit adder for signal <n1038> created at line 0.
+    Found 23-bit adder for signal <GND_19_o_b[15]_add_23_OUT> created at line 0.
+    Found 22-bit adder for signal <n1042> created at line 0.
+    Found 22-bit adder for signal <GND_19_o_b[15]_add_25_OUT> created at line 0.
+    Found 21-bit adder for signal <n1046> created at line 0.
+    Found 21-bit adder for signal <GND_19_o_b[15]_add_27_OUT> created at line 0.
+    Found 20-bit adder for signal <n1050> created at line 0.
+    Found 20-bit adder for signal <GND_19_o_b[15]_add_29_OUT> created at line 0.
+    Found 19-bit adder for signal <n1054> created at line 0.
+    Found 19-bit adder for signal <GND_19_o_b[15]_add_31_OUT> created at line 0.
+    Found 18-bit adder for signal <n1058> created at line 0.
+    Found 18-bit adder for signal <GND_19_o_b[15]_add_33_OUT> created at line 0.
+    Found 17-bit adder for signal <n1062> created at line 0.
+    Found 17-bit adder for signal <GND_19_o_b[15]_add_35_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_19_o_BUS_0001_add_38_OUT[16:0]> created at line 0.
+    Found 32-bit comparator greater for signal <BUS_0001_INV_929_o> created at line 0
+    Found 31-bit comparator greater for signal <BUS_0002_INV_928_o> created at line 0
+    Found 30-bit comparator greater for signal <BUS_0003_INV_927_o> created at line 0
+    Found 29-bit comparator greater for signal <BUS_0004_INV_926_o> created at line 0
+    Found 28-bit comparator greater for signal <BUS_0005_INV_925_o> created at line 0
+    Found 27-bit comparator greater for signal <BUS_0006_INV_924_o> created at line 0
+    Found 26-bit comparator greater for signal <BUS_0007_INV_923_o> created at line 0
+    Found 25-bit comparator greater for signal <BUS_0008_INV_922_o> created at line 0
+    Found 24-bit comparator greater for signal <BUS_0009_INV_921_o> created at line 0
+    Found 23-bit comparator greater for signal <BUS_0010_INV_920_o> created at line 0
+    Found 22-bit comparator greater for signal <BUS_0011_INV_919_o> created at line 0
+    Found 21-bit comparator greater for signal <BUS_0012_INV_918_o> created at line 0
+    Found 20-bit comparator greater for signal <BUS_0013_INV_917_o> created at line 0
+    Found 19-bit comparator greater for signal <BUS_0014_INV_916_o> created at line 0
+    Found 18-bit comparator greater for signal <BUS_0015_INV_915_o> created at line 0
+    Found 17-bit comparator greater for signal <BUS_0016_INV_914_o> created at line 0
+    Found 16-bit comparator greater for signal <BUS_0017_INV_913_o> created at line 0
+    Summary:
+	inferred  35 Adder/Subtractor(s).
+	inferred  17 Comparator(s).
+	inferred 244 Multiplexer(s).
+Unit <div_16s_16s> synthesized.
+
+Synthesizing Unit <Flipflop>.
+    Related source file is "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\Flipflop.vhd".
+        INIT_VALUE = '0'
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Flipflop> synthesized.
+
+Synthesizing Unit <AddressDecoder>.
+    Related source file is "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\AddressDecoder.vhd".
+        DATA_WIDTH = 16
+WARNING:Xst:647 - Input <address<11:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <AddressDecoder> synthesized.
+
+Synthesizing Unit <Memory>.
+    Related source file is "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\Memory.vhd".
+        DATA_WIDTH = 16
+        ADDR_WIDTH = 15
+        IMAGE = "display_interface_BRAM.txt"
+    Found 32768x16-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Found 16-bit register for signal <data_out>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Memory> synthesized.
+
+Synthesizing Unit <BidirectionalPort>.
+    Related source file is "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\BidirectionalPort.vhd".
+        DATA_WIDTH = 16
+        PORT_DATA_ADDR = "10"
+        PORT_CONFIG_ADDR = "01"
+        PORT_ENABLE_ADDR = "00"
+        PORT_IRQENABLE_ADDR = "11"
+    Found 1-bit tristate buffer for signal <data_o<15>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<14>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<13>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<12>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<11>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<10>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<9>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<8>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<7>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<6>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<5>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<4>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<3>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<2>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<1>> created at line 133
+    Found 1-bit tristate buffer for signal <data_o<0>> created at line 133
+    Found 1-bit tristate buffer for signal <triState_in<0>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<0>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<1>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<1>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<2>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<2>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<3>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<3>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<4>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<4>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<5>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<5>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<6>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<6>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<7>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<7>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<8>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<8>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<9>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<9>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<10>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<10>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<11>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<11>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<12>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<12>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<13>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<13>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<14>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<14>> created at line 51
+    Found 1-bit tristate buffer for signal <triState_in<15>> created at line 50
+    Found 1-bit tristate buffer for signal <triState_out<15>> created at line 51
+    Summary:
+	inferred  64 Multiplexer(s).
+	inferred  48 Tristate(s).
+Unit <BidirectionalPort> synthesized.
+
+Synthesizing Unit <RegisterNbits>.
+    Related source file is "C:\Documents and Settings\dfdfjf\Desktop\projetos_vhdl\port_io_display\RegisterNbits.vhd".
+        WIDTH = 16
+        INIT_VALUE = 0
+    Found 16-bit register for signal <q>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <RegisterNbits> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32768x16-bit single-port RAM                          : 1
+# Multipliers                                          : 1
+ 16x16-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 87
+ 16-bit adder                                          : 11
+ 16-bit subtractor                                     : 5
+ 17-bit adder                                          : 11
+ 18-bit adder                                          : 4
+ 19-bit adder                                          : 4
+ 20-bit adder                                          : 4
+ 21-bit adder                                          : 4
+ 22-bit adder                                          : 4
+ 23-bit adder                                          : 4
+ 24-bit adder                                          : 4
+ 25-bit adder                                          : 4
+ 26-bit adder                                          : 4
+ 27-bit adder                                          : 4
+ 28-bit adder                                          : 4
+ 29-bit adder                                          : 4
+ 30-bit adder                                          : 4
+ 31-bit adder                                          : 4
+ 32-bit adder                                          : 4
+# Registers                                            : 54
+ 1-bit register                                        : 24
+ 16-bit register                                       : 30
+# Comparators                                          : 34
+ 16-bit comparator greater                             : 1
+ 16-bit comparator lessequal                           : 1
+ 17-bit comparator greater                             : 1
+ 17-bit comparator lessequal                           : 1
+ 18-bit comparator greater                             : 1
+ 18-bit comparator lessequal                           : 1
+ 19-bit comparator greater                             : 1
+ 19-bit comparator lessequal                           : 1
+ 20-bit comparator greater                             : 1
+ 20-bit comparator lessequal                           : 1
+ 21-bit comparator greater                             : 1
+ 21-bit comparator lessequal                           : 1
+ 22-bit comparator greater                             : 1
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator greater                             : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator greater                             : 1
+ 24-bit comparator lessequal                           : 1
+ 25-bit comparator greater                             : 1
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator greater                             : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator greater                             : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator greater                             : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator greater                             : 1
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator greater                             : 1
+ 30-bit comparator lessequal                           : 1
+ 31-bit comparator greater                             : 1
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 739
+ 1-bit 2-to-1 multiplexer                              : 615
+ 16-bit 16-to-1 multiplexer                            : 3
+ 16-bit 2-to-1 multiplexer                             : 96
+ 17-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 24
+# Tristates                                            : 48
+ 1-bit tristate buffer                                 : 48
+# FSMs                                                 : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 17-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Memory>.
+INFO:Xst:3226 - The RAM <Mram_RAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <data_out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32768-word x 16-bit                 |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     enA            | connected to signal <en>            | high     |
+    |     weA            | connected to signal <wr>            | high     |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <data_in>       |          |
+    |     doA            | connected to signal <data_out>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Memory> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32768x16-bit single-port block RAM                    : 1
+# Multipliers                                          : 1
+ 16x16-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 52
+ 16-bit adder                                          : 9
+ 16-bit adder carry in                                 : 33
+ 16-bit subtractor                                     : 5
+ 17-bit adder                                          : 3
+ 17-bit adder carry in                                 : 2
+# Registers                                            : 488
+ Flip-Flops                                            : 488
+# Comparators                                          : 34
+ 16-bit comparator greater                             : 1
+ 16-bit comparator lessequal                           : 1
+ 17-bit comparator greater                             : 1
+ 17-bit comparator lessequal                           : 1
+ 18-bit comparator greater                             : 1
+ 18-bit comparator lessequal                           : 1
+ 19-bit comparator greater                             : 1
+ 19-bit comparator lessequal                           : 1
+ 20-bit comparator greater                             : 1
+ 20-bit comparator lessequal                           : 1
+ 21-bit comparator greater                             : 1
+ 21-bit comparator lessequal                           : 1
+ 22-bit comparator greater                             : 1
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator greater                             : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator greater                             : 1
+ 24-bit comparator lessequal                           : 1
+ 25-bit comparator greater                             : 1
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator greater                             : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator greater                             : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator greater                             : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator greater                             : 1
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator greater                             : 1
+ 30-bit comparator lessequal                           : 1
+ 31-bit comparator greater                             : 1
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 722
+ 1-bit 2-to-1 multiplexer                              : 599
+ 16-bit 16-to-1 multiplexer                            : 3
+ 16-bit 2-to-1 multiplexer                             : 95
+ 17-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 24
+# FSMs                                                 : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 17-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <PROCESSOR/FSM_0> on signal <currentState[1:5]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ sidle   | 00000
+ sfetch  | 00001
+ sreg    | 00010
+ shalt   | 00011
+ salu    | 00100
+ srts    | 00101
+ srti    | 00110
+ spop    | 00111
+ spopf   | 01000
+ sldsp   | 01001
+ sld     | 01010
+ sst     | 01011
+ swbk    | 01100
+ sjmp    | 01101
+ ssbrt   | 01110
+ spush   | 01111
+ sisr    | 10000
+ sldisra | 10001
+---------------------
+WARNING:Xst:2042 - Unit R8_uC: 32 internal tristates are replaced by logic (pull-up yes): PORTA/triState_in<0>, PORTA/triState_in<10>, PORTA/triState_in<11>, PORTA/triState_in<12>, PORTA/triState_in<13>, PORTA/triState_in<14>, PORTA/triState_in<15>, PORTA/triState_in<1>, PORTA/triState_in<2>, PORTA/triState_in<3>, PORTA/triState_in<4>, PORTA/triState_in<5>, PORTA/triState_in<6>, PORTA/triState_in<7>, PORTA/triState_in<8>, PORTA/triState_in<9>, dataP1_out<0>, dataP1_out<10>, dataP1_out<11>, dataP1_out<12>, dataP1_out<13>, dataP1_out<14>, dataP1_out<15>, dataP1_out<1>, dataP1_out<2>, dataP1_out<3>, dataP1_out<4>, dataP1_out<5>, dataP1_out<6>, dataP1_out<7>, dataP1_out<8>, dataP1_out<9>.
+
+Optimizing unit <RegisterNbits> ...
+
+Optimizing unit <R8_uC> ...
+
+Optimizing unit <R8> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block R8_uC, actual ratio is 30.
+FlipFlop PROCESSOR/ir_0 has been replicated 3 time(s)
+FlipFlop PROCESSOR/ir_1 has been replicated 3 time(s)
+FlipFlop PROCESSOR/ir_12 has been replicated 3 time(s)
+FlipFlop PROCESSOR/ir_13 has been replicated 3 time(s)
+FlipFlop PROCESSOR/ir_14 has been replicated 3 time(s)
+FlipFlop PROCESSOR/ir_15 has been replicated 3 time(s)
+FlipFlop PROCESSOR/ir_2 has been replicated 4 time(s)
+FlipFlop PROCESSOR/ir_3 has been replicated 4 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 520
+ Flip-Flops                                            : 520
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : R8_uC.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3567
+#      GND                         : 1
+#      INV                         : 31
+#      LUT1                        : 32
+#      LUT2                        : 27
+#      LUT3                        : 216
+#      LUT4                        : 445
+#      LUT5                        : 499
+#      LUT6                        : 973
+#      MUXCY                       : 662
+#      MUXF7                       : 102
+#      MUXF8                       : 48
+#      VCC                         : 1
+#      XORCY                       : 530
+# FlipFlops/Latches                : 520
+#      FDC                         : 22
+#      FDCE                        : 496
+#      FDE                         : 1
+#      FDPE                        : 1
+# RAMS                             : 32
+#      RAMB16BWER                  : 32
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 18
+#      IBUF                        : 1
+#      IBUFG                       : 1
+#      IOBUF                       : 16
+# DCMs                             : 1
+#      DCM_SP                      : 1
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             520  out of  18224     2%  
+ Number of Slice LUTs:                 2223  out of   9112    24%  
+    Number used as Logic:              2223  out of   9112    24%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2407
+   Number with an unused Flip Flop:    1887  out of   2407    78%  
+   Number with an unused LUT:           184  out of   2407     7%  
+   Number of fully used LUT-FF pairs:   336  out of   2407    13%  
+   Number of unique control sets:        49
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    232     7%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               32  out of     32   100%  
+    Number using Block RAM only:         32
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of DSP48A1s:                      1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | DCM_SP:CLKFX           | 552   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 14.052ns (Maximum Frequency: 71.167MHz)
+   Minimum input arrival time before clock: 8.549ns
+   Maximum output required time after clock: 4.649ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 14.052ns (frequency: 71.167MHz)
+  Total number of paths / destination ports: 145544351344473370000000000 / 1659
+-------------------------------------------------------------------------
+Delay:               56.206ns (Levels of Logic = 139)
+  Source:            PROCESSOR/ir_2_2 (FF)
+  Destination:       PROCESSOR/highReg_15 (FF)
+  Source Clock:      clk rising 0.3X
+  Destination Clock: clk rising 0.3X
+
+  Data Path: PROCESSOR/ir_2_2 to PROCESSOR/highReg_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            19   0.447   1.300  PROCESSOR/ir_2_2 (PROCESSOR/ir_2_2)
+     LUT3:I0->O            1   0.205   0.580  PROCESSOR/ir[3]_GND_15_o_equal_488_o<3>11 (PROCESSOR/ir[3]_GND_15_o_equal_488_o<3>1)
+     LUT6:I5->O            2   0.205   0.981  PROCESSOR/ir[15]_ir[3]_AND_338_o1 (PROCESSOR/ir[15]_ir[3]_AND_338_o)
+     LUT6:I0->O            1   0.203   0.580  PROCESSOR/decodedInstruction<6>7 (PROCESSOR/decodedInstruction<6>7)
+     LUT6:I5->O            1   0.205   0.580  PROCESSOR/decodedInstruction<6>9 (PROCESSOR/decodedInstruction<6>9)
+     LUT6:I5->O            2   0.205   0.617  PROCESSOR/decodedInstruction<6>10 (PROCESSOR/decodedInstruction<6>10)
+     LUT6:I5->O            7   0.205   0.774  PROCESSOR/decodedInstruction<6>12_1 (PROCESSOR/decodedInstruction<6>121)
+     LUT6:I5->O           13   0.205   1.037  PROCESSOR/GND_15_o_GND_15_o_OR_117_o1_2 (PROCESSOR/GND_15_o_GND_15_o_OR_117_o11)
+     LUT5:I3->O           18   0.203   1.394  PROCESSOR/Mmux_opB141 (PROCESSOR/opB<7>)
+     LUT6:I1->O            2   0.203   0.617  PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0002_INV_80_o221_SW0 (N272)
+     LUT6:I5->O            1   0.205   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0002_INV_80_o221_G (N408)
+     MUXF7:I1->O           6   0.140   0.745  PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0002_INV_80_o221 (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0002_INV_80_o221)
+     LUT6:I5->O            6   0.205   0.745  PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0002_INV_80_o223 (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0002_INV_80_o22)
+     LUT6:I5->O            5   0.205   0.715  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_218_o12 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_218_o)
+     LUT6:I5->O            2   0.205   0.617  PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0004_INV_143_o3 (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0004_INV_143_o)
+     LUT6:I5->O            3   0.205   0.898  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_276_o11 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_276_o)
+     LUT5:I1->O            0   0.203   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0005_INV_173_o_lutdi1 (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0005_INV_173_o_lutdi1)
+     MUXCY:DI->O           1   0.145   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0005_INV_173_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0005_INV_173_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0005_INV_173_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0005_INV_173_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0005_INV_173_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0005_INV_173_o_cy<3>)
+     MUXCY:CI->O           8   0.213   0.803  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0005_INV_173_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0005_INV_173_o)
+     LUT5:I4->O            8   0.205   1.031  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_332_o121 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_334_o)
+     LUT4:I1->O            1   0.205   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0006_INV_202_o_lut<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0006_INV_202_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0006_INV_202_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0006_INV_202_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0006_INV_202_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0006_INV_202_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0006_INV_202_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0006_INV_202_o_cy<3>)
+     MUXCY:CI->O          13   0.213   0.933  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0006_INV_202_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0006_INV_202_o)
+     LUT6:I5->O            6   0.205   0.973  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_386_o131 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_389_o)
+     LUT4:I1->O            1   0.205   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0007_INV_230_o_lut<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0007_INV_230_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0007_INV_230_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0007_INV_230_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0007_INV_230_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0007_INV_230_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0007_INV_230_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0007_INV_230_o_cy<3>)
+     MUXCY:CI->O          21   0.213   1.114  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0007_INV_230_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0007_INV_230_o)
+     LUT6:I5->O            5   0.205   0.962  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_438_o151 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_443_o)
+     LUT4:I0->O            0   0.203   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_lutdi (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_cy<0> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_cy<4>)
+     MUXCY:CI->O          28   0.213   1.235  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0008_INV_257_o_cy<5> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0008_INV_257_o)
+     LUT6:I5->O            3   0.205   0.898  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_488_o161 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_494_o)
+     LUT4:I0->O            0   0.203   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_lutdi (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_cy<0> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_cy<4>)
+     MUXCY:CI->O          24   0.213   1.173  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0009_INV_283_o_cy<5> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0009_INV_283_o)
+     LUT6:I5->O            5   0.205   0.962  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_536_o171 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_543_o)
+     LUT4:I0->O            0   0.203   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_lutdi (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_cy<0> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_cy<4>)
+     MUXCY:CI->O          36   0.213   1.349  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0010_INV_308_o_cy<5> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0010_INV_308_o)
+     LUT6:I5->O            3   0.205   0.898  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_582_o181 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_590_o)
+     LUT4:I0->O            0   0.203   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_lutdi (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_cy<0> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_cy<4>)
+     MUXCY:CI->O          30   0.213   1.264  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0011_INV_332_o_cy<5> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0011_INV_332_o)
+     LUT6:I5->O            5   0.205   0.962  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_626_o191 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_635_o)
+     LUT4:I0->O            0   0.203   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_lutdi (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<0> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<5> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<5>)
+     MUXCY:CI->O          44   0.213   1.463  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0012_INV_355_o_cy<6> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0012_INV_355_o)
+     LUT6:I5->O            3   0.205   0.898  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_668_o1101 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_678_o)
+     LUT4:I0->O            0   0.203   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_lutdi (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<0> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<5> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<5>)
+     MUXCY:CI->O          36   0.213   1.349  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0013_INV_377_o_cy<6> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0013_INV_377_o)
+     LUT6:I5->O            5   0.205   0.962  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_708_o1111 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_719_o)
+     LUT4:I0->O            0   0.203   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_lutdi (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<0> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<5> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<5>)
+     MUXCY:CI->O          52   0.213   1.561  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0014_INV_398_o_cy<6> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0014_INV_398_o)
+     LUT6:I5->O            4   0.205   0.931  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_746_o1121 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_758_o)
+     LUT4:I0->O            0   0.203   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_lutdi (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<0> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<5> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<6> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<6>)
+     MUXCY:CI->O          56   0.213   1.588  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0015_INV_418_o_cy<7> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0015_INV_418_o)
+     LUT6:I5->O            4   0.205   0.931  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_782_o1131 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_795_o)
+     LUT4:I0->O            0   0.203   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_lutdi (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<0> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<5> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<6> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<6>)
+     MUXCY:CI->O          60   0.213   1.614  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0016_INV_437_o_cy<7> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0016_INV_437_o)
+     LUT6:I5->O            2   0.205   0.864  PROCESSOR/opA[15]_opB[15]_rem_143/Mmux_a[15]_GND_17_o_MUX_816_o1141 (PROCESSOR/opA[15]_opB[15]_rem_143/a[15]_GND_17_o_MUX_830_o)
+     LUT4:I0->O            0   0.203   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_lutdi (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<0> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<5> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<6> (PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<6>)
+     MUXCY:CI->O          32   0.213   1.292  PROCESSOR/opA[15]_opB[15]_rem_143/Mcompar_BUS_0017_INV_455_o_cy<7> (PROCESSOR/opA[15]_opB[15]_rem_143/BUS_0017_INV_455_o)
+     LUT6:I5->O            1   0.205   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_lut<0> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<0> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<1> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<2> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<3> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<4> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<5> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<6> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<7> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<8> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<9> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<10> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<11> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<12> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<13> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<13>)
+     MUXCY:CI->O           0   0.019   0.000  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<14> (PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_cy<14>)
+     XORCY:CI->O           1   0.180   0.580  PROCESSOR/opA[15]_opB[15]_rem_143/Madd_GND_17_o_a[15]_add_38_OUT[15:0]_xor<15> (PROCESSOR/opA[15]_opB[15]_rem_143/GND_17_o_a[15]_add_38_OUT[15:0]<15>)
+     LUT6:I5->O            1   0.205   0.000  PROCESSOR/Mmux__n143716 (PROCESSOR/_n1437<31>)
+     FDCE:D                    0.102          PROCESSOR/highReg_15
+    ----------------------------------------
+    Total                     56.206ns (15.437ns logic, 40.769ns route)
+                                       (27.5% logic, 72.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 950 / 950
+-------------------------------------------------------------------------
+Offset:              8.549ns (Levels of Logic = 6)
+  Source:            rst (PAD)
+  Destination:       PROCESSOR/pc_3 (FF)
+  Destination Clock: clk rising 0.3X
+
+  Data Path: rst to PROCESSOR/pc_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           520   1.222   2.457  rst_IBUF (rst_IBUF)
+     LUT6:I0->O           21   0.203   1.114  PROCESSOR/ce (ce)
+     LUT4:I3->O           16   0.205   1.005  Mmux_dataR8_in181 (Mmux_dataR8_in18)
+     LUT6:I5->O            8   0.205   1.050  Mmux_dataR8_in10 (dataR8_in<3>)
+     LUT5:I1->O            1   0.203   0.580  PROCESSOR/Mmux_currentState[4]_X_10_o_wide_mux_391_OUT101 (PROCESSOR/Mmux_currentState[4]_X_10_o_wide_mux_391_OUT10)
+     LUT3:I2->O            1   0.205   0.000  PROCESSOR/Mmux_currentState[4]_X_10_o_wide_mux_391_OUT102 (PROCESSOR/currentState[4]_X_10_o_wide_mux_391_OUT<3>)
+     FDCE:D                    0.102          PROCESSOR/pc_3
+    ----------------------------------------
+    Total                      8.549ns (2.345ns logic, 6.204ns route)
+                                       (27.4% logic, 72.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 48 / 16
+-------------------------------------------------------------------------
+Offset:              4.649ns (Levels of Logic = 2)
+  Source:            PORTA/REG_CONFIG/q_15 (FF)
+  Destination:       portA_io<15> (PAD)
+  Source Clock:      clk rising 0.3X
+
+  Data Path: PORTA/REG_CONFIG/q_15 to portA_io<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.447   0.849  PORTA/REG_CONFIG/q_15 (PORTA/REG_CONFIG/q_15)
+     LUT2:I0->O            1   0.203   0.579  PORTA/regConfig_out[15]_regEnable_out[15]_AND_507_o_inv1 (PORTA/regConfig_out[15]_regEnable_out[15]_AND_507_o_inv)
+     IOBUF:T->IO               2.571          portA_io_15_IOBUF (portA_io<15>)
+    ----------------------------------------
+    Total                      4.649ns (3.221ns logic, 1.428ns route)
+                                       (69.3% logic, 30.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   56.206|    5.116|   13.066|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 57.00 secs
+Total CPU time to Xst completion: 56.58 secs
+ 
+--> 
+
+Total memory usage is 204728 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

@@ -1,0 +1,391 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.xst" -ofn "C:/Documents and Settings/dfdfjf/Desktop/projetos_vhdl/port_io_display/R8_uC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 "R8_uC.ngc" R8_uC.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o R8_uC_map.ncd R8_uC.ngd R8_uC.pcf 
+par -w -intstyle ise -ol high -mt off R8_uC_map.ncd R8_uC.ncd R8_uC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml R8_uC.twx R8_uC.ncd -o R8_uC.twr R8_uC.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f R8_uC.ut R8_uC.ncd 

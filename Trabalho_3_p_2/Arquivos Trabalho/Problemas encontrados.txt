@@ -1,0 +1,5 @@
+Quando uma acontecia uma interrupção
+	* O pc era incrementado, errado
+	* era lida uma nova instrucao, meio errado
+	* o pc+1 era salvo, totalmente errado
+	* houve problemas com endereçamento de pra onde iria o pc

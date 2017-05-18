@@ -1,0 +1,21 @@
+net "clk" loc = v10;
+
+net "rst" loc = B8;
+
+net "portA_io[15]" loc = C4;	//Slide_switch 7
+net "portA_io[14]" loc = D9;	//Slide_switch 6
+net "portA_io[13]" loc = A8;	//Slide_switch 5
+net "portA_io[12]" loc = C9;	//Slide_switch 4
+net "portA_io[11]" loc = N16;	//Slide_switch 3
+net "portA_io[10]" loc = N15;	//Slide_switch 2
+net "portA_io[9]" loc = P18;	//Slide_switch 1
+net "portA_io[8]" loc = P17;	//Slide_switch 0
+net "portA_io[7]" loc = T17;	//Led 7
+net "portA_io[6]" loc = T18;	//Led 6
+net "portA_io[5]" loc = U17;	//Led 5
+net "portA_io[4]" loc = U18;	//Led 4
+net "portA_io[3]" loc = M14;	//Led 3
+net "portA_io[2]" loc = N14;	//Led 2
+net "portA_io[1]" loc = L14;	//Led 1
+net "portA_io[0]" loc = M13;	//Led 0
+
